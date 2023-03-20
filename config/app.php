@@ -1,5 +1,8 @@
 <?php
 
+use App\Providers\AppServiceProvider;
+use App\Providers\OpenAIServiceProvider;
+
 return [
 
     /*
@@ -13,7 +16,7 @@ return [
     |
     */
 
-    'name' => 'Gitcm-ai',
+    'name' => 'Gitcm-AI',
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +57,7 @@ return [
     */
 
     'timezone' => 'UTC',
-
+    'locale' => 'en-GB',
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -67,7 +70,8 @@ return [
     */
 
     'providers' => [
-        App\Providers\AppServiceProvider::class,
+        AppServiceProvider::class,
+        OpenAIServiceProvider::class,
     ],
 
 ];

@@ -1,7 +1,13 @@
 {
     "name": "laravel-zero/laravel-zero",
     "description": "The Laravel Zero Framework.",
-    "keywords": ["framework", "laravel", "laravel zero", "console", "cli"],
+    "keywords": [
+        "framework",
+        "laravel",
+        "laravel zero",
+        "console",
+        "cli"
+    ],
     "homepage": "https://laravel-zero.com",
     "type": "project",
     "license": "MIT",
@@ -18,7 +24,10 @@
     "require": {
         "php": "^8.1",
         "laravel-zero/framework": "^10.0",
-        "nunomaduro/termwind": "^1.15"
+        "nunomaduro/termwind": "^1.15",
+        "nyholm/psr7": "^1.5",
+        "openai-php/client": "^0.4.0",
+        "symfony/http-client": "^6.2"
     },
     "require-dev": {
         "laravel/pint": "^1.5",
@@ -42,10 +51,13 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "allow-plugins": {
-            "pestphp/pest-plugin": true
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
         }
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "bin": ["gitcm-ai"]
+    "bin": [
+        "gitcm-ai"
+    ]
 }
